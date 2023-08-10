@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SafetyFirst</string>
+    <string name="sos">SOS</string>
+    <string name="gaurd">Gaurd</string>
+    <string name="guard">GUARD</string>
+    <string name="in_case_of_emergency_keep_telling_your_trusted_contacts_to_contact_me">In case of emergency, keep telling your trusted contacts to contact me.</string>
+    <string name="open_when_you_re_in_potential_dangerous_journey">Open when you\'re in potential dangerous journey.</string>
+    <string name="guardimage">GuardImage</string>
+    <string name="sosimage">SosImage\n</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="security">Security</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="family">Family</string>
+    <string name="my_family">My Family</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="security_">Security</string>
+    <string name="guardpic">GuardPic</string>
+    <string name="imagesos">SOSImage</string>
+    <string name="my_family_">My Family</string>
+    <string name="personimage">personImage</string>
+    <string name="karan_jadaun">Karan Jadaun</string>
+    <string name="dubai_united_arab_emirates">Dubai, United Arab Emirates</string>
+    <string name="_16_40">16:40</string>
+    <string name="_90">90%</string>
+    <string name="_223m">223M</string>
+    <string name="wifi">WiFi</string>
+</resources>
