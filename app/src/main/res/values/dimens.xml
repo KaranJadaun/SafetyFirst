@@ -6,5 +6,4 @@
     <dimen name="_8dp">8dp</dimen>
     <dimen name="_16sp">16sp</dimen>
     <dimen name="_24dp">24dp</dimen>
-    <dimen name="_64dp">64dp</dimen>
 </resources>

@@ -15,7 +15,6 @@ play-services-location = "21.0.1"
 play-services-maps = "18.1.0"
 room-ktx = "2.5.2"
 firebase-auth-ktx = "22.1.1"
-room-common = "2.5.2"
 
 [libraries]
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room-ktx" }
@@ -33,7 +32,6 @@ constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayo
 play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "play-services-location" }
 play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "play-services-maps" }
 firebase-auth-ktx = { group = "com.google.firebase", name = "firebase-auth-ktx", version.ref = "firebase-auth-ktx" }
-androidx-room-common = { group = "androidx.room", name = "room-common", version.ref = "room-common" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
