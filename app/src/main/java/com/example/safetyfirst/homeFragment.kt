@@ -94,7 +94,7 @@ class homeFragment : Fragment() {
                         arrayOf(id),
                         ""
                     )
-                    if(pCr != null &&  pCr.count>0){
+                    if(pCr != null &&  pCr.count > 0){
                         while(pCr != null&& pCr.moveToNext()){
                             val phoneNum =pCr.getString(pCr.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER))
                             listContacts.add(ContactModel(name,phoneNum))
