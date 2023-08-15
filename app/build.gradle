@@ -3,8 +3,10 @@ plugins {
     alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.com.google.android.libraries.mapsplatform.secrets.gradle.plugin)
     id 'kotlin-android'
-    id 'kotlin-kapt'
-//    id 'com.google.gms.google-services'
+    id 'com.google.gms.google-services'
+//    id 'com.google.devtools.ksp'
+    id "org.jetbrains.kotlin.kapt" version "1.9.0"
+//    id 'com.google.devtools.ksp'
 }
 
 android {
@@ -34,6 +36,13 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -44,7 +53,7 @@ dependencies {
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation 'com.google.firebase:firebase-firestore-ktx'
 
-    implementation platform('com.google.firebase:firebase-bom:31.2.3')
+    implementation platform('com.google.firebase:firebase-bom:32.2.2')
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
@@ -57,12 +66,17 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:20.1.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+    implementation(libs.kotlinx.coroutines.android)
 
     // Room components
-    implementation "androidx.room:room-ktx:2.5.0"
-    kapt "androidx.room:room-compiler:2.5.0"
-    androidTestImplementation "androidx.room:room-testing:2.5.0"
+    def room_version = "2.5.2"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+//    implementation libs.androidx.room.ktx
+//    ksp libs.androidx.room.compiler
+//    androidTestImplementation libs.androidx.room.testing
 
     // Import the BoM for the Firebase platform
     implementation platform('com.google.firebase:firebase-bom:28.4.1')
@@ -72,8 +86,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth-ktx'
 
     // Also declare the dependency for the Google Play services library and specify its version
-    implementation 'com.google.android.gms:play-services-auth:20.4.1'
+    implementation 'com.google.android.gms:play-services-auth:20.6.0'
 
     implementation 'com.google.firebase:firebase-firestore-ktx'
-    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation libs.play.services.location
 }
