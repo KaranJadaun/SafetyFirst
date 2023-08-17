@@ -28,4 +28,13 @@
     <string name="wifi">WiFi</string>
     <string name="sign_in_with_google">Sign In with GOOGLE</string>
     <string name="login">login</string>
+    <string name="software_developer">Software Developer</string>
+    <string name="_56">56</string>
+    <string name="weight">weight</string>
+    <string name="_168">168</string>
+    <string name="centimetres">centimetres</string>
+    <string name="b">B+</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="_179">179</string>
+    <string name="_75">75</string>
 </resources>
