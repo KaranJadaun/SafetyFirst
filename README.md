@@ -10,5 +10,5 @@ Developed a facilitated simultaneous real-time location sharing with 10+ trusted
 - [Coroutines Android](https://developer.android.com/kotlin/coroutines) - A coroutine is a concurrency design pattern that you can use on Android to simplify code that executes asynchronously. Coroutines were added to Kotlin in version 1.3 and are based on established concepts from other languages.
 
 Home Page | Security Page | DashBoard Page | Profile Page
---- | --- | --- | --- | 
+ --- | --- | --- | --- |
 ![](https://github.com/KaranJadaun/SafetyFirst/blob/master/SafetyFirstHome.png) | ![](https://github.com/KaranJadaun/SafetyFirst/blob/master/SafetyFirstSecurity.png) | ![](https://github.com/KaranJadaun/SafetyFirst/blob/master/SafetyFirstDashBoard.png) | ![](https://github.com/KaranJadaun/SafetyFirst/blob/master/SafetyFirstProfile.png)  
